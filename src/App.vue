@@ -1,16 +1,16 @@
 <template>
     <div id="app">
         <header class="app-header">
-            <h1>🎭 Reusable Modal System Demo</h1>
-            <p>A Vue 3 modal system with proper MVC architecture</p>
+            <h1>Reusable Modal System Demo</h1>
+            <p>A Vue 3 modal system with MVC architecture</p>
         </header>
 
         <main class="app-main">
             <!-- User Management Section -->
             <section class="demo-section">
-                <h2>👥 User Management</h2>
+                <h2>User Management</h2>
                 <div class="section-actions">
-                    <button @click="createUser" class="btn btn-primary">➕ Create User</button>
+                    <button @click="createUser" class="btn btn-primary">Create User</button>
                 </div>
 
                 <div class="data-grid" v-if="users.length > 0">
@@ -22,10 +22,10 @@
                         </div>
                         <div class="card-actions">
                             <button @click="editUser(user)" class="btn btn-sm btn-secondary">
-                                ✏️ Edit
+                                Edit
                             </button>
                             <button @click="deleteUser(user)" class="btn btn-sm btn-danger">
-                                🗑️ Delete
+                                Delete
                             </button>
                         </div>
                     </div>
@@ -35,11 +35,9 @@
 
             <!-- Product Management Section -->
             <section class="demo-section">
-                <h2>📦 Product Management</h2>
+                <h2>Product Management</h2>
                 <div class="section-actions">
-                    <button @click="createProduct" class="btn btn-primary">
-                        ➕ Create Product
-                    </button>
+                    <button @click="createProduct" class="btn btn-primary">Create Product</button>
                 </div>
 
                 <div class="data-grid" v-if="products.length > 0">
@@ -56,10 +54,10 @@
                         </div>
                         <div class="card-actions">
                             <button @click="editProduct(product)" class="btn btn-sm btn-secondary">
-                                ✏️ Edit
+                                Edit
                             </button>
                             <button @click="deleteProduct(product)" class="btn btn-sm btn-danger">
-                                🗑️ Delete
+                                Delete
                             </button>
                         </div>
                     </div>
@@ -69,13 +67,13 @@
 
             <!-- Modal Demos Section -->
             <section class="demo-section">
-                <h2>🎪 Modal Demos</h2>
+                <h2>Modal Demos</h2>
                 <div class="demo-buttons">
                     <button @click="showConfirmDemo" class="btn btn-outline">
-                        💬 Confirmation Dialog
+                        Confirmation Dialog
                     </button>
                     <button @click="showDangerousConfirmDemo" class="btn btn-outline btn-danger">
-                        ⚠️ Dangerous Confirmation
+                        Dangerous Confirmation
                     </button>
                 </div>
             </section>

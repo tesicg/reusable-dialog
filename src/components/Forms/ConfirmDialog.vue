@@ -2,12 +2,7 @@
     <div class="confirm-dialog">
         <div class="dialog-header">
             <div class="icon-wrapper">
-                <svg
-                    class="warning-icon"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                >
+                <svg class="warning-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
